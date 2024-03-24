@@ -10,21 +10,17 @@
 </head>
 <body>
     <header>
-        <img src="#" alt="logo">
+        <h1>PRF</h1>
         <i class="fa-solid fa-bars"></i>
     </header>
     <main>
         <section class="beggin">
-            <h1>BEM VINDO AO COMANDO PRF BRASIL</h1>
-            <p>Venha fazer parte de um time focado e dedicado totalmente ao rp militar no xbox (antiga geração)</p>
-            <p id="button-enter">Entrar</p>
-            <img src="#" alt="png-prf">
         </section>
         <section class="about">
-            <h1>QUEM NÓS SOMOS</h1>
+            <h1>Um pouco sobre quem somos</h1>
             <div class="first-step">
                 <h2>01.Nossa historia</h2>
-                <p>Nosso comando começou antes mesmo de carregar o nome de prf, eramos um comando militar inspirados no exercito brasileiro, depois de muitas historia e muita emoção. Decidimos então, criar um comando inspirado na policia rodoviaria federal.</p>
+                <p>Nosso comando começou antes mesmo de carregar o nome de prf, eramos um comando militar inspirado no exercito brasileiro, depois de muitas historia e muita emoção. Decidimos então, criar um comando inspirado na policia rodoviaria federal.</p>
             </div>
             <div class="second-step">
                 <h2>02.Nossa luta</h2>
@@ -35,7 +31,7 @@
                 <p>Sabemos muito bem que um comando só funciona se tiver membros dedicados e que realmente gostem do rp de policia, e isso é de extrema importancia para que tudo funcione, mas nossa prioridade é e sempre será a diversão coletiva.</p>
             </div>
             <div class="container-img">
-                <img src="#" alt="image">
+                <img src="imagens/gta-5-7202.png" alt="image">
             </div>
         </section>
         <section class="patruller">
@@ -44,6 +40,25 @@
             </div>
             <div class="center-text">
                 <p>Nosso comando funciona como qualquer outro comando militar, tendo suas atividades mais basicas em fins de semana, é muito importante que você compareça aos sabados e domingos para nossas patrulhas e abordagens de rotina.</p>
+                <p id="rotate" class="crono" onclick="vercrono()">Cronograma</p>
+                <div class="days" style="display: none;" id="idays">
+                    <ul>
+                        <li class="top">SABADO</li>
+                        <ul>
+                            <li id="activity" class="move-right">Blitz</li>
+                            <li id="activity" class="move-right">Treinamento</li>
+                            <li id="activity" class="move-right">Dia de pagamento</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li class="top">DOMINGO</li>
+                        <ul>
+                            <li id="activity" class="move-left">Abordagens</li>
+                            <li id="activity" class="move-left">Patrulhas</li>
+                            <li id="activity" class="move-left">Aulas</li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="formulario">
@@ -51,26 +66,34 @@
                 <form action="#" method="post">
                     <div class="text-form">
                         <h1>Venha fazer parte</h1>
-                        <h2>Preencha o formulario a baixo e seja um de nós.</h2>
+                        <h2>Para entrar na nossa equipe de bravos agentes, preencha logo a baixo o formulario com os dados necessarios do seu processo seletivo.</h2>
                     </div>
                     <div class="form-to-go">
                         <label for="inome">NOME</label>
                         <input type="text" name="nome" id="inome" placeholder="nome do agente" required minlength="5" maxlength="34">
                         <label for="isobrenome">SOBRENOME</label>
                         <input type="text" name="sobrenome" id="isobrenome" placeholder="sobrenome do agente" required minlength="5" maxlength="34">
-                        <label for="iemail">EMAIL</label>
+                        <label for="iemail">E-MAIL</label>
                         <input type="email" name="mail" id="iemail" placeholder="e-mail do agente" required minlength="5" maxlength="34">
                         <label for="iwhats">WHATSAPP</label>
                         <input type="tel" name="telfone" id="iwhats" required pattern="^\(\d{2}\)\d{4.5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
-                        <label for="itext">Por que deseja entrar no comando?</label>
-                        <textarea name="text" id="itext" cols="30" rows="10"></textarea>
+                        <input id="send" type="submit" value="ENVIAR">
                     </div>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <h1>DESENVOLVIDO POR INSPETOR MIKAEE2864</h1>
+        <h1>&copy;DESENVOLVIDO POR INSPETOR MIKAEE2864</h1>
     </footer>
+    <script>
+        function vercrono(){
+            if(idays.style.display == 'flex'){
+                idays.style.display = 'none'           
+            }else{
+                idays.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>
