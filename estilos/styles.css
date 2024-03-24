@@ -123,7 +123,7 @@ header i {
     font-size: 4vw;
     padding: 5px 10px;
     border: 1px solid var(--cor-03);
-    width: 40%;
+    width: 40vw;
     display: block;
     margin: auto;
     box-shadow: 0px 0px 5px #fefefd91;
@@ -220,7 +220,7 @@ footer{
     padding: 15px 30px;
 }
 footer h1{
-    font-size: 1.0em;
+    font-size: 0.7em;
     color: var(--cor-03);
     text-align: center;
 }
