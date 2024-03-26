@@ -11,8 +11,18 @@
 <body>
     <header>
         <h1>PRF</h1>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="burguer" style="display: flex;" onclick="menuburguer()"></i>
+        <i class="fa-solid fa-x" id="xis" style="display: none;" ondblclick="menuburguer()"></i>
     </header>
+    <div class="container-menu" id="menu" style="display: none;">
+        <nav>
+            <img src="imagens/prf-brasao-scaled-removebg-preview.png" alt="bra">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Patrulhas</a>
+            <a href="#">Cadastro</a>
+        </nav>
+    </div>
     <main>
         <section class="beggin">
         </section>
@@ -44,7 +54,7 @@
                 <div class="days" style="display: none;" id="idays">
                     <ul>
                         <li class="top">SABADO</li>
-                        <ul>
+                        <ul id="content-li">
                             <li id="activity" class="move-right">Blitz</li>
                             <li id="activity" class="move-right">Treinamento</li>
                             <li id="activity" class="move-right">Dia de pagamento</li>
@@ -52,7 +62,7 @@
                     </ul>
                     <ul>
                         <li class="top">DOMINGO</li>
-                        <ul>
+                        <ul id="content-li">
                             <li id="activity" class="move-left">Abordagens</li>
                             <li id="activity" class="move-left">Patrulhas</li>
                             <li id="activity" class="move-left">Aulas</li>
@@ -89,9 +99,20 @@
     <script>
         function vercrono(){
             if(idays.style.display == 'flex'){
-                idays.style.display = 'none'           
+                idays.style.display = 'none'          
             }else{
                 idays.style.display = 'flex'
+            }
+        }
+        function menuburguer(){
+            if(menu.style.display == 'flex'){
+                menu.style.display = 'none'
+                burguer.style.display = 'flex'
+                xis.style.display = 'none'
+            }else{
+                menu.style.display = 'flex'
+                burguer.style.display = 'none'
+                xis.style.display = 'flex'
             }
         }
     </script>
