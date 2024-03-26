@@ -31,6 +31,9 @@ header{
     position: sticky;
     top: 0;
 }
+header img{
+    display: none;
+}
 header h1{
     color: var(--cor-01);
     font-weight: bold;
@@ -47,7 +50,7 @@ header i {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 97vh;
     width: 100%;
     padding: 20px;
     background-color: #291379;
@@ -70,8 +73,11 @@ header i {
     font-family: var(--font-logo);
     font-size: 19px;
     text-shadow: 0px 0px 1px #FFC100;
-    transition: .5s;
 }
+.container-secret{
+    display: none;
+}
+
 .container-menu a:hover{
     color: var(--cor-03);
 }
@@ -226,6 +232,14 @@ header i {
     flex-direction: column;
     align-items: center;
 }
+.form-01{
+    display: flex;
+    flex-direction: column;
+}
+.form-02{
+    display: flex;
+    flex-direction: column;
+}
 .form-to-go label{
     font-family: var(--font-new);
     font-weight: bold;
@@ -233,6 +247,7 @@ header i {
     color: #FFC100;
     margin-bottom: 5px;
     margin-top: 5px;
+    text-align: center;
 }
 .form-to-go input{
     padding: 14px;

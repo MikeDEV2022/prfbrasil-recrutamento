@@ -1,6 +1,160 @@
 @charset "UTF-8";
 /*media queries*/
+*{
+    box-sizing: border-box;
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+    #burguer{
+        display: none;
+    }
+    .about h1{
+        text-align: center;
+    }
+    header{
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header img{
+        display: flex;
+        width: 5vw;
+    }
+    .container-secret{
+        display: flex;
+    }
+    .container-secret nav > a{
+        text-decoration: none;
+        color: #FFC100;
+        font-family: var(--font-logo);
+        font-size: 16px;
+        text-shadow: 0px 0px 1px #FFC100;
+        margin-right: 10px;
+    }
+    .container-secret nav > a:hover{
+        border-bottom: 2px solid #FFC100;
+    }
+    .beggin{
+        background-image: url(../imagens/WhatsApp\ Image\ 2024-03-22\ at\ 8.25.08\ PM.jpeg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .container-img img{
+        width: 30vw;
+    }
+    .crono{
+        width: 20vw;
+        font-size: 2vw;
+    }
+    .container-patruller{
+        width: 50%;
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #burguer{
+        display: none;
+    }
+    .about h1{
+        text-align: center;
+    }
+    header{
+        padding: 10 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header img{
+        display: flex;
+        width: 5vw;
+    }
+    .container-secret{
+        display: flex;
+    }
+    .container-secret nav > a{
+        text-decoration: none;
+        color: #FFC100;
+        font-family: var(--font-logo);
+        font-size: 16px;
+        text-shadow: 0px 0px 1px #FFC100;
+        margin-right: 10px;
+    }
+    .container-secret nav > a:hover{
+        border-bottom: 2px solid #FFC100;
+    }
+    .beggin{
+        background-image: url(../imagens/WhatsApp\ Image\ 2024-03-22\ at\ 8.25.08\ PM.jpeg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+    .container-img img{
+        width: 30vw;
+    }
+    .crono{
+        width: 20vw;
+        font-size: 2vw;
+    }
+    .container-patruller{
+        width: 50%;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    #burguer{
+        display: none;
+    }
+    .about h1{
+        text-align: center;
+    }
+    header{
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header img{
+        display: flex;
+        width: 5vw;
+    }
+    .container-secret{
+        display: flex;
+    }
+    .container-secret nav > a{
+        text-decoration: none;
+        color: #FFC100;
+        font-family: var(--font-logo);
+        font-size: 16px;
+        text-shadow: 0px 0px 1px #FFC100;
+        margin-right: 10px;
+    }
+    .container-secret nav > a:hover{
+        border-bottom: 2px solid #FFC100;
+    }
+    .beggin{
+        background-image: url(../imagens/WhatsApp\ Image\ 2024-03-22\ at\ 8.25.08\ PM.jpeg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+    .container-img img{
+        width: 25vw;
+    }
+    .crono{
+        width: 15vw;
+        font-size: 1.5vw;
+    }
+    .container-patruller{
+        width: 50%;
+    }
+    .form{
+        width: 50%;
+    }
+    .about{
+        width: 50vw;
+        display: block;
+        margin: auto;
+    }
     
 }

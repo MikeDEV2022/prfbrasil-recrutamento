@@ -11,22 +11,30 @@
 <body>
     <header>
         <h1>PRF</h1>
-        <i class="fa-solid fa-bars" id="burguer" style="display: flex;" onclick="menuburguer()"></i>
-        <i class="fa-solid fa-x" id="xis" style="display: none;" ondblclick="menuburguer()"></i>
+        <div class="container-secret">
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#patrulhas">Patrulhas</a>
+                <a href="#cadastro">Cadastro</a>
+            </nav>
+        </div>
+        <img src="imagens/prf-brasao-scaled-removebg-preview.png" alt="">
+        <i class="fa-solid fa-bars" id="burguer" onclick="menuburguer()"></i>
     </header>
     <div class="container-menu" id="menu" style="display: none;">
         <nav>
             <img src="imagens/prf-brasao-scaled-removebg-preview.png" alt="bra">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre</a>
-            <a href="#">Patrulhas</a>
-            <a href="#">Cadastro</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#patrulhas">Patrulhas</a>
+            <a href="#cadastro">Cadastro</a>
         </nav>
     </div>
     <main>
-        <section class="beggin">
+        <section class="beggin" id="inicio">
         </section>
-        <section class="about">
+        <section class="about" id="sobre">
             <h1>Um pouco sobre quem somos</h1>
             <div class="first-step">
                 <h2>01.Nossa historia</h2>
@@ -40,53 +48,59 @@
                 <h2>03.O foco é você</h2>
                 <p>Sabemos muito bem que um comando só funciona se tiver membros dedicados e que realmente gostem do rp de policia, e isso é de extrema importancia para que tudo funcione, mas nossa prioridade é e sempre será a diversão coletiva.</p>
             </div>
-            <div class="container-img">
+            <div class="container-img" id="patrulhas">
                 <img src="imagens/gta-5-7202.png" alt="image">
             </div>
         </section>
         <section class="patruller">
-            <div class="top-text">
-                <h1>Patrulhas em Fins de semana</h1>
-            </div>
-            <div class="center-text">
-                <p>Nosso comando funciona como qualquer outro comando militar, tendo suas atividades mais basicas em fins de semana, é muito importante que você compareça aos sabados e domingos para nossas patrulhas e abordagens de rotina.</p>
-                <p id="rotate" class="crono" onclick="vercrono()">Cronograma</p>
-                <div class="days" style="display: none;" id="idays">
-                    <ul>
-                        <li class="top">SABADO</li>
-                        <ul id="content-li">
-                            <li id="activity" class="move-right">Blitz</li>
-                            <li id="activity" class="move-right">Treinamento</li>
-                            <li id="activity" class="move-right">Dia de pagamento</li>
+            <div class="container-patruller">
+                <div class="top-text">
+                    <h1>Patrulhas em Fins de semana</h1>
+                </div>
+                <div class="center-text">
+                    <p>Nosso comando funciona como qualquer outro comando militar, tendo suas atividades mais basicas em fins de semana, é muito importante que você compareça aos sabados e domingos para nossas patrulhas e abordagens de rotina.</p>
+                    <p id="rotate" class="crono" onclick="vercrono()">Cronograma</p>
+                    <div class="days" style="display: none;" id="idays">
+                        <ul>
+                            <li class="top">SABADO</li>
+                            <ul id="content-li">
+                                <li id="activity" class="move-right">Blitz</li>
+                                <li id="activity" class="move-right">Treinamento</li>
+                                <li id="activity" class="move-right">Dia de pagamento</li>
+                            </ul>
                         </ul>
-                    </ul>
-                    <ul>
-                        <li class="top">DOMINGO</li>
-                        <ul id="content-li">
-                            <li id="activity" class="move-left">Abordagens</li>
-                            <li id="activity" class="move-left">Patrulhas</li>
-                            <li id="activity" class="move-left">Aulas</li>
+                        <ul>
+                            <li class="top">DOMINGO</li>
+                            <ul id="content-li">
+                                <li id="activity" class="move-left">Abordagens</li>
+                                <li id="activity" class="move-left">Patrulhas</li>
+                                <li id="activity" class="move-left">Aulas</li>
+                            </ul>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="formulario">
             <div class="form">
-                <form action="#" method="post">
+                <form action="https://formspree.io/f/mwkgrplz" method="post">
                     <div class="text-form">
                         <h1>Venha fazer parte</h1>
                         <h2>Para entrar na nossa equipe de bravos agentes, preencha logo a baixo o formulario com os dados necessarios do seu processo seletivo.</h2>
                     </div>
-                    <div class="form-to-go">
-                        <label for="inome">NOME</label>
-                        <input type="text" name="nome" id="inome" placeholder="nome do agente" required minlength="5" maxlength="34">
-                        <label for="isobrenome">SOBRENOME</label>
-                        <input type="text" name="sobrenome" id="isobrenome" placeholder="sobrenome do agente" required minlength="5" maxlength="34">
-                        <label for="iemail">E-MAIL</label>
-                        <input type="email" name="mail" id="iemail" placeholder="e-mail do agente" required minlength="5" maxlength="34">
-                        <label for="iwhats">WHATSAPP</label>
-                        <input type="tel" name="telfone" id="iwhats" required pattern="^\(\d{2}\)\d{4.5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                    <div class="form-to-go" id="cadastro">
+                        <div class="form-01">
+                            <label for="inome">NOME</label>
+                            <input type="text" name="nome" id="inome" placeholder="nome do agente" required minlength="5" maxlength="34">
+                            <label for="isobrenome">SOBRENOME</label>
+                            <input type="text" name="sobrenome" id="isobrenome" placeholder="sobrenome do agente" required minlength="5" maxlength="34">
+                        </div>
+                        <div class="form-02">
+                            <label for="iemail">E-MAIL</label>
+                            <input type="email" name="mail" id="iemail" placeholder="e-mail do agente" required minlength="5" maxlength="34">
+                            <label for="iwhats">WHATSAPP</label>
+                            <input type="tel" name="telfone" id="iwhats" required placeholder="(xx)xxxx-xxxx">
+                        </div>
                         <input id="send" type="submit" value="ENVIAR">
                     </div>
                 </form>
@@ -107,12 +121,8 @@
         function menuburguer(){
             if(menu.style.display == 'flex'){
                 menu.style.display = 'none'
-                burguer.style.display = 'flex'
-                xis.style.display = 'none'
             }else{
                 menu.style.display = 'flex'
-                burguer.style.display = 'none'
-                xis.style.display = 'flex'
             }
         }
     </script>
