@@ -28,8 +28,6 @@ header{
     background-image: linear-gradient(to right, var(--cor-02) 50vw, var(--grandient));
     padding: 10px 60px;
     color: var(--cor-03);
-    position: sticky;
-    top: 0;
 }
 header img{
     display: none;
