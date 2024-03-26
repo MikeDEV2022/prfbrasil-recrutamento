@@ -17,6 +17,7 @@
         justify-content: space-between;
         position: sticky;
         top: 0;
+        border-bottom: 2px solid #FFC100;
     }
     header img{
         display: flex;
@@ -67,6 +68,7 @@
         justify-content: space-between;
         position: sticky;
         top: 0;
+        border-bottom: 2px solid #FFC100;
     }
     header img{
         display: flex;
@@ -118,6 +120,7 @@
         justify-content: space-between;
         position: sticky;
         top: 0;
+        border-bottom: 2px solid #FFC100;
     }
     header img{
         display: flex;
